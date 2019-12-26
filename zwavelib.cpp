@@ -241,6 +241,8 @@ const char *cclassStr (uint8 cc)
     return "LOCK";
   case 0x77:
     return "NODE NAMING";
+  case 0x79:
+    return "SOUND SWITCH";
   case 0x7A:
     return "FIRMWARE UPDATE MD";
   case 0x7B:
@@ -411,6 +413,8 @@ uint8 cclassNum (char const *str)
     return 0x76;
   else if (strcmp(str, "NODE NAMING") == 0)
     return 0x77;
+  else if (strcmp(str, "SOUND SWITCH") == 0)
+    return 0x79;
   else if (strcmp(str, "FIRMWARE UPDATE MD") == 0)
     return 0x7A;
   else if (strcmp(str, "GROUPING NAME") == 0)
